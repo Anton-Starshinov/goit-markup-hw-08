@@ -456,6 +456,11 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .slogan {
+    width: 768px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .slogan__list {
