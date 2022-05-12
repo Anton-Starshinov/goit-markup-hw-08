@@ -40,11 +40,19 @@ body {
 }
 
 .conteiner {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
+}
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
 }
 
 .backdrop {
@@ -445,25 +453,33 @@ body {
 }
 
 .slogan {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.slogan__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -30px;
+@media screen and (min-width: 768px) {
+  .slogan__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
-.slogan__item {
-  -ms-flex-preferred-size: calc(25% - 30px);
-      flex-basis: calc(25% - 30px);
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .slogan__item {
+    display: block;
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .slogan__pic {
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -478,24 +494,41 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .slogan__pic {
+    max-width: 354px;
+  }
+}
 
 .slogan__title {
+  max-width: 450px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--header-color);
 }
+@media screen and (min-width: 768px) {
+  .slogan__title {
+    max-width: 354px;
+  }
+}
 
 .slogan__text {
-  max-width: 270px;
+  max-width: 480px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+@media screen and (min-width: 768px) {
+  .slogan__text {
+    max-width: 354px;
+  }
 }
 
 .command {
