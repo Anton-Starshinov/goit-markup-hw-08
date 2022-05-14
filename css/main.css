@@ -54,6 +54,11 @@ body {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -456,9 +461,10 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .slogan {
-    width: 768px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -473,6 +479,14 @@ body {
     margin-top: -30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .slogan__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -30px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .slogan__item {
@@ -480,6 +494,13 @@ body {
     width: calc(50% - 30px);
     margin-left: 30px;
     margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slogan__item {
+    -ms-flex-preferred-size: calc(25% - 30px);
+        flex-basis: calc(25% - 30px);
+    margin-left: 30px;
   }
 }
 
@@ -504,6 +525,11 @@ body {
     max-width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .slogan__pic {
+    width: 270px;
+  }
+}
 
 .slogan__title {
   max-width: 450px;
@@ -519,6 +545,12 @@ body {
 @media screen and (min-width: 768px) {
   .slogan__title {
     max-width: 354px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slogan__title {
+    text-align: center;
   }
 }
 
@@ -533,6 +565,11 @@ body {
 @media screen and (min-width: 768px) {
   .slogan__text {
     max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slogan__text {
+    max-width: 270px;
   }
 }
 
@@ -864,6 +901,11 @@ body {
 
 .aside {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .aside {
+    display: none;
+  }
 }
 
 .aside__list {
