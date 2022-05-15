@@ -996,18 +996,19 @@ body {
   padding-bottom: 60px;
   background-color: #2F303A;
 }
+
 @media screen and (min-width: 480px) {
-  .footer .conteiner {
-    width: 480px;
+  .conteiner {
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
-  .footer .conteiner {
+  .conteiner {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer .conteiner {
+  .conteiner {
     width: 1200px;
   }
 }
