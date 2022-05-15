@@ -18,7 +18,7 @@
             <div class="header-mob">
         <a class="logo link" href="./index.html"> Web<span class="logo--color-black">Studio</span> </a>
             <button type="button" class="menu-open button">
-                <svg class="menu-icon" width="40" height="40">
+                <svg class="menu-icon-open" width="40" height="40">
                     <use href="./icons/symbol-defs.svg#icon-menu_40px"></use>
                 </svg>
             </button>
@@ -46,14 +46,14 @@
         <div class="mob-menu is-hidden">
             <div class="conteiner">
                 <div class="mob-menu-top">
-                    <button type="button" class="menu-close button" data-modal-close>
-                        <svg class="modal-close" width="40" height="40">
-                        <use href="./icons/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                    <button type="button" class="menu-close button">
+                        <svg class="menu-icon-close" width="40" height="40">
+                            <use href="./icons/symbol-defs.svg#icon-close_40px"></use>
                         </svg>
                     </button>
                     <nav class="mob-menu-nav">
                         <ul class="mob-menu-nav__list list">
-                            <li class="mob-menu-nav__item"><a href="./index.html" class="mob-menu-link link bottom__active">Студия</a></li>
+                            <li class="mob-menu-nav__item"><a href="./index.html" class="mob-menu-link link link-active">Студия</a></li>
                             <li class="mob-menu-nav__item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио</a></li>
                             <li class="mob-menu-nav__item"><a href="" class="mob-menu-link link">Контакты</a></li>
                         </ul>
@@ -541,7 +541,7 @@
     </div>
     </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="button-close-modal button" data-modal-close>
                 <svg class="modal-close"
@@ -603,6 +603,7 @@
                     <label class="modal-label" for="user-text">Комментарий</label>
                         <textarea class="modal-user-text" name="user-text" id="user-text" >Введите текст</textarea>
                     </div>
+                    </form>
                     <div class="modal-field-check">
                         <input type="checkbox" class="modal-check is-hidden" id="modal-check" name="privacy-check">
                         <label for="modal-check" class="modal-check-text">Соглашаюсь с рассылкой и принимаю</label>
@@ -611,10 +612,10 @@
                     <div class="modal-btn">
                         <button type="submit" class="modal-button button">Отправить</button>
                     </div>
-            </form>
+           
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 </html>
