@@ -1,12 +1,13 @@
    .filters {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     @media screen and (min-width: 768px) {
     padding-bottom: 30px;
+    padding-bottom: 90px;
     }
     @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
     }
    }
    .filtrrs-list {
@@ -14,16 +15,19 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
+    margin-bottom: 40px;
     }
     @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     width: 738px;
+    margin-bottom: 30px;
     }
     @media screen and (min-width: 1200px){
     width: 1200px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
     }
 
    }

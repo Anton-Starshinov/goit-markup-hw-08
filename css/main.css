@@ -1321,6 +1321,7 @@ body {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
+  z-index: 5;
 }
 .mob-menu .conteiner {
   display: -webkit-box;
@@ -1439,17 +1440,18 @@ body {
 
 .filters {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .filters {
     padding-bottom: 30px;
+    padding-bottom: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
   .filters {
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1461,6 +1463,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 100%;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1472,6 +1475,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     width: 738px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1483,6 +1487,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -1514,26 +1519,48 @@ body {
   background-color: var(--accent-color);
 }
 
-.progect-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+@media screen and (min-width: 768px) {
+  .progect-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .progect-list {
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
 }
 
-.progect-item {
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
-  margin-left: 30px;
+.progect-item:not(:last-child) {
   margin-bottom: 30px;
 }
 .progect-item:hover {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .progect-item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .progect-item {
+    -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+        flex-basis: calc(33.3333333333% - 30px);
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .progect-cover {
