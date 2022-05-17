@@ -520,7 +520,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .conteiner__hero {
-    width: 1600px;
+    min-width: 1600px;
     height: 600px;
   }
 }
@@ -572,7 +572,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__content {
-    width: 1600px;
+    min-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
