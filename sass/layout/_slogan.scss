@@ -19,6 +19,11 @@
     }
   }
   .slogan__item {
+    @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
     @media screen and (min-width: 768px) {
       display: block;
       width: calc(100% / 2 - 30px);
@@ -59,9 +64,6 @@
     @media screen and (min-width: 768px) {
       max-width: 354px;
       text-align: left;
-    }
-    @media screen and (min-width: 1200px) {
-      text-align: center;
     }
   }
   .slogan__text {
